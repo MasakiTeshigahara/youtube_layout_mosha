@@ -1,0 +1,238 @@
+@charset "utf-8";
+a{
+    color: #000;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*共有要素*/
+.btn_login{
+    color: blue;
+    font-size: 14px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 15px 0 45px;
+    border: 1px solid blue; 
+    border-radius: 2px;
+    position: relative;
+}
+.btn_login:before{
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+/*ヘッダー */
+.header {
+    /* background: grey; */
+}
+.header > .continer {
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+/*ハンバーガーメニュー*/
+.button_burger{
+    width: 30px;
+    height: 30px;
+    background: gray;
+}
+/*ロゴ*/
+.area_logo_haeder{
+    margin: 0 0 0 10px;
+}
+.area_logo_haeder .logo{
+    display: block;
+    width: 80px;
+    height: 30px;
+    background: gray;
+}
+/*検索フォーム*/
+.form_heder{
+    margin: 0 auto;
+}
+/*ナビ_ヘッダー*/
+.nav_header{
+    /* margin: 0 0 0 auto; */
+}
+.list_nav_header {
+    display: flex;
+}
+.list_nav_header > li + li{
+    margin: 0 0 0 10px;
+}
+/*.btn_loginは除外する指示*/
+.header a:not(.btn_login){
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: gray;
+}
+/*サイドバー */
+.sidebar {
+    flex: 0 0 240px;
+}
+.sidebar .box{
+    padding: 10px 0;
+}
+/*ボックスが隣接した場合の設定*/
+.sidebar .box + .box{
+border-top: 1px solid #ccc;
+}
+/*サイドバーナビリスト*/
+.list_nav_sidebar{
+    padding: 0%;
+}
+
+.list_nav_sidebar a{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 0 0 80px;
+    position: relative;
+}
+.list_nav_sidebar a:before{
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: gray;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+.area_register_sidebar{
+    padding: 0 30px;
+}
+.area_register_sidebar .description{
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.area_register_sidebar .wrap_btn{
+    margin-top: 10px;
+}
+
+/*メイン */
+.main {
+    background: #f9f9f9;
+    flex: auto;
+    min-width: 10px;
+}
+.main .list_video{
+    padding: 0;
+}
+.main p{
+    margin: 0;
+}
+.main .box{
+    padding: 30px;
+}
+.main .box + .box{
+    border-top: 3px solid #ccc;
+}
+.main .box .ttl{
+    font-size: 24px;
+}
+/* ビデオリスト */
+.list_video{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -12px;
+}
+.list_video > li {
+    padding: 8px;
+    width: 23.2%;
+}
+
+/* サムネイル投稿画像 */
+.list_video .thmb {
+    width: 100%;
+    /* background: rgb(50, 122, 145); */
+}
+
+.list_video .thmb:before{
+    content: "";
+    display: block;
+    width: 100px;
+    /* padding-topを設定することにより比率を保ってくれる */
+    padding-top: 52%;
+
+}
+/* .list_video .thmub:before{
+    content: "";
+    display: block;
+    width: 100px;
+    padding-top: 75px;
+} */
+/* レイアウト */
+.list_video .layout {
+    padding: 10px 0 0 0;
+    display: flex;
+}
+
+
+/* アイキャッチ */
+.list_video .eye {
+    flex: 0 0 40px;
+    margin: 0 10px 0 0;
+}
+
+.list_video .img {
+    width: 100%;
+    border-radius: 50%;
+    background: gray;
+}
+
+.list_video .img:before{
+    content: "";
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+}
+
+/* テキスト */
+.list_layout .text {
+    flex: aout;
+    min-width: 10px;
+
+}
+
+.list_video .text .ttl{
+    font-size: 15px;
+}
+
+.list_video .text .user{
+    font-size: 14px;
+}
+
+.list_video .text .count{
+    font-size: 13px;
+}
+/* .list_video .img {
+    width: 100%;
+}
+
+.list_video .img:before{
+    content: "";
+    display: block;
+    width: 1000%;
+    padding-top: 100%;
+    background: gray;
+
+} */
+/*ページレイアウト*/
+.layout_page{
+    display: flex;
+}
